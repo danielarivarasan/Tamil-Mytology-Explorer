@@ -35,7 +35,8 @@ app.add_middleware(
 # ─────────────────────────────────────────────
 # Data Loading
 # ─────────────────────────────────────────────
-DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "words.json")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "words.json")
 
 def load_words() -> List[dict]:
     """Load word entries from JSON dataset."""
@@ -298,7 +299,7 @@ def words_by_origin(origin: str = Query(..., description="Origin type: 'Pure Tam
 # ─────────────────────────────────────────────
 # Serve Frontend
 # ─────────────────────────────────────────────
-FRONTEND_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend")
+FRONTEND_DIR = os.path.join(BASE_DIR, "..", "frontend")
 
 app.mount("/static", StaticFiles(directory=os.path.join(FRONTEND_DIR, "static")), name="static")
 
