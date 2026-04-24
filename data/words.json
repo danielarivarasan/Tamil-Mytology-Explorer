@@ -1,0 +1,222 @@
+[
+  {
+    "word": "அன்பு",
+    "meaning_tamil": "நேசம், பாசம்",
+    "meaning_english": "Love, affection",
+    "root": "அன்",
+    "morphemes": ["அன்", "பு"],
+    "origin": "Pure Tamil",
+    "example": "அன்பே தமிழ் என்று சொல்வார்கள்.",
+    "example_english": "They say love is Tamil itself."
+  },
+  {
+    "word": "வானம்",
+    "meaning_tamil": "ஆகாயம், விண்",
+    "meaning_english": "Sky, heaven",
+    "root": "வான்",
+    "morphemes": ["வான்", "அம்"],
+    "origin": "Pure Tamil",
+    "example": "வானம் நீல நிறத்தில் உள்ளது.",
+    "example_english": "The sky is blue in color."
+  },
+  {
+    "word": "மலர்",
+    "meaning_tamil": "பூ, மொட்டு விரிதல்",
+    "meaning_english": "Flower, to bloom",
+    "root": "மல்",
+    "morphemes": ["மல்", "அர்"],
+    "origin": "Pure Tamil",
+    "example": "தோட்டத்தில் மலர்கள் பூத்துள்ளன.",
+    "example_english": "Flowers have bloomed in the garden."
+  },
+  {
+    "word": "கடல்",
+    "meaning_tamil": "சமுத்திரம், பெருங்கடல்",
+    "meaning_english": "Sea, ocean",
+    "root": "கட",
+    "morphemes": ["கட", "அல்"],
+    "origin": "Pure Tamil",
+    "example": "கடலின் ஓசை கேட்கின்றது.",
+    "example_english": "The sound of the sea can be heard."
+  },
+  {
+    "word": "மழை",
+    "meaning_tamil": "பனிபொழிவு, வர்ஷம்",
+    "meaning_english": "Rain",
+    "root": "மழ",
+    "morphemes": ["மழ", "ஐ"],
+    "origin": "Pure Tamil",
+    "example": "மழை நன்றாக பெய்கிறது.",
+    "example_english": "It is raining well."
+  },
+  {
+    "word": "பாடல்",
+    "meaning_tamil": "இசை, பாட்டு",
+    "meaning_english": "Song, poem set to music",
+    "root": "பாடு",
+    "morphemes": ["பாடு", "அல்"],
+    "origin": "Pure Tamil",
+    "example": "அவர் இனிய பாடல் பாடினார்.",
+    "example_english": "He/She sang a sweet song."
+  },
+  {
+    "word": "நிலவு",
+    "meaning_tamil": "சந்திரன், மதி",
+    "meaning_english": "Moon",
+    "root": "நில",
+    "morphemes": ["நில", "அவு"],
+    "origin": "Pure Tamil",
+    "example": "நிலவு இன்று மிகவும் பிரகாசமாக உள்ளது.",
+    "example_english": "The moon is very bright today."
+  },
+  {
+    "word": "தாய்",
+    "meaning_tamil": "அம்மா, மாதா",
+    "meaning_english": "Mother",
+    "root": "தா",
+    "morphemes": ["தா", "ய்"],
+    "origin": "Pure Tamil",
+    "example": "தாய் மடியில் தூங்கும் குழந்தை.",
+    "example_english": "A child sleeping in the mother's lap."
+  },
+  {
+    "word": "சொல்",
+    "meaning_tamil": "வார்த்தை, பதம்",
+    "meaning_english": "Word, speech",
+    "root": "சொல்",
+    "morphemes": ["சொல்"],
+    "origin": "Pure Tamil",
+    "example": "ஒவ்வொரு சொல்லும் அர்த்தம் உடையது.",
+    "example_english": "Every word has a meaning."
+  },
+  {
+    "word": "புத்தகம்",
+    "meaning_tamil": "நூல், ஏடு",
+    "meaning_english": "Book",
+    "root": "புத்தக (Sanskrit: पुस्तक)",
+    "morphemes": ["புத்தக", "அம்"],
+    "origin": "Sanskrit-derived",
+    "example": "நான் தினமும் புத்தகம் படிப்பேன்.",
+    "example_english": "I read a book every day."
+  },
+  {
+    "word": "வித்யா",
+    "meaning_tamil": "கல்வி, ஞானம்",
+    "meaning_english": "Education, knowledge",
+    "root": "வித்யா (Sanskrit: विद्या)",
+    "morphemes": ["வித்", "யா"],
+    "origin": "Sanskrit-derived",
+    "example": "வித்யா மனித வாழ்வின் ஆதாரம்.",
+    "example_english": "Education is the foundation of human life."
+  },
+  {
+    "word": "சந்தோஷம்",
+    "meaning_tamil": "மகிழ்ச்சி, களிப்பு",
+    "meaning_english": "Happiness, joy",
+    "root": "சந்தோஷ (Sanskrit: सन्तोष)",
+    "morphemes": ["சந்தோஷ", "அம்"],
+    "origin": "Sanskrit-derived",
+    "example": "அவளுக்கு மிகுந்த சந்தோஷம் இருக்கிறது.",
+    "example_english": "She has great happiness."
+  },
+  {
+    "word": "காதல்",
+    "meaning_tamil": "காதல், இசைவு",
+    "meaning_english": "Romantic love",
+    "root": "காது / காதல்",
+    "morphemes": ["காது", "அல்"],
+    "origin": "Pure Tamil",
+    "example": "காதல் வாழ்வின் அழகு.",
+    "example_english": "Love is the beauty of life."
+  },
+  {
+    "word": "நண்பன்",
+    "meaning_tamil": "தோழன், மித்திரன்",
+    "meaning_english": "Friend (male)",
+    "root": "நண்பு",
+    "morphemes": ["நண்பு", "அன்"],
+    "origin": "Pure Tamil",
+    "example": "என் நண்பன் என்னோடு வந்தான்.",
+    "example_english": "My friend came with me."
+  },
+  {
+    "word": "கவிதை",
+    "meaning_tamil": "பாடல், செய்யுள்",
+    "meaning_english": "Poetry, poem",
+    "root": "கவி (Sanskrit: कवि)",
+    "morphemes": ["கவி", "தை"],
+    "origin": "Sanskrit-derived",
+    "example": "அவர் அழகிய கவிதை எழுதுகிறார்.",
+    "example_english": "He/She writes beautiful poetry."
+  },
+  {
+    "word": "ஆறு",
+    "meaning_tamil": "நதி, ஆறுதல்",
+    "meaning_english": "River; also: to cool/soothe",
+    "root": "ஆ",
+    "morphemes": ["ஆ", "று"],
+    "origin": "Pure Tamil",
+    "example": "காவிரி ஆறு தமிழகத்தின் உயிர்நாடி.",
+    "example_english": "The Kaveri river is the lifeline of Tamil Nadu."
+  },
+  {
+    "word": "மரம்",
+    "meaning_tamil": "விருட்சம், தரு",
+    "meaning_english": "Tree",
+    "root": "மர",
+    "morphemes": ["மர", "அம்"],
+    "origin": "Pure Tamil",
+    "example": "அந்த மரம் நிழல் தருகிறது.",
+    "example_english": "That tree gives shade."
+  },
+  {
+    "word": "கல்வி",
+    "meaning_tamil": "படிப்பு, ஞானம்",
+    "meaning_english": "Education, learning",
+    "root": "கல்",
+    "morphemes": ["கல்", "வி"],
+    "origin": "Pure Tamil",
+    "example": "கல்வி அறிவே சிறந்த செல்வம்.",
+    "example_english": "Educational knowledge is the greatest wealth."
+  },
+  {
+    "word": "பயணம்",
+    "meaning_tamil": "பிரயாணம், சென்று வருதல்",
+    "meaning_english": "Journey, travel",
+    "root": "பயண",
+    "morphemes": ["பயண", "அம்"],
+    "origin": "Pure Tamil",
+    "example": "நீண்ட பயணம் களைப்பாக இருந்தது.",
+    "example_english": "The long journey was tiring."
+  },
+  {
+    "word": "உலகம்",
+    "meaning_tamil": "பூமி, ஜகம்",
+    "meaning_english": "World, earth",
+    "root": "உல",
+    "morphemes": ["உல", "கம்"],
+    "origin": "Pure Tamil",
+    "example": "இந்த உலகம் மிகவும் அழகானது.",
+    "example_english": "This world is very beautiful."
+  },
+  {
+    "word": "சமூகம்",
+    "meaning_tamil": "சமாஜம், கூட்டம்",
+    "meaning_english": "Society, community",
+    "root": "சமூக (Arabic: جماعة via Persian)",
+    "morphemes": ["சமூக", "அம்"],
+    "origin": "Arabic-derived",
+    "example": "நல்ல சமூகம் கட்டமைப்பு அவசியம்.",
+    "example_english": "Building a good society is necessary."
+  },
+  {
+    "word": "குழந்தை",
+    "meaning_tamil": "பிள்ளை, சேய்",
+    "meaning_english": "Child, baby",
+    "root": "குழ",
+    "morphemes": ["குழ", "அந்தை"],
+    "origin": "Pure Tamil",
+    "example": "குழந்தை மழலை பேசுகிறது.",
+    "example_english": "The child is speaking in baby talk."
+  }
+]

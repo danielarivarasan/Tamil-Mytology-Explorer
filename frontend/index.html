@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamil Etymology Explorer · தமிழ் சொல் ஆய்வு</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <!-- Background palm-leaf texture pattern -->
+  <div class="bg-texture" aria-hidden="true"></div>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-glyph">ஓம்</span>
+        <div>
+          <h1 class="site-title">Tamil Etymology Explorer</h1>
+          <p class="site-subtitle">தமிழ் சொல் வேர் ஆய்வு · Morphology · Origin · Meaning</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span class="db-badge" id="db-count">— words</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ MAIN ═══════════════ -->
+  <main class="main-container">
+
+    <!-- Search Panel -->
+    <section class="search-panel">
+      <div class="search-mode-toggle">
+        <button class="mode-btn active" data-mode="tamil" onclick="setMode('tamil')">
+          Tamil → Meaning
+        </button>
+        <button class="mode-btn" data-mode="english" onclick="setMode('english')">
+          English → Tamil
+        </button>
+      </div>
+
+      <div class="search-box-wrap">
+        <div class="search-input-group">
+          <span class="search-icon">⌕</span>
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="தமிழ் சொல் தட்டச்சு செய்க… (e.g. அன்பு)"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="clear-btn" id="clear-btn" onclick="clearSearch()" title="Clear">✕</button>
+        </div>
+        <button class="search-btn" onclick="performSearch()">
+          <span>ஆய்வு செய்க</span>
+          <span class="btn-en">Analyze</span>
+        </button>
+      </div>
+
+      <!-- Autocomplete dropdown -->
+      <ul class="autocomplete-list" id="autocomplete-list" role="listbox"></ul>
+
+      <!-- Quick samples -->
+      <div class="quick-samples">
+        <span class="samples-label">Try:</span>
+        <button class="sample-chip" onclick="fillSearch('அன்பு')">அன்பு</button>
+        <button class="sample-chip" onclick="fillSearch('கடல்')">கடல்</button>
+        <button class="sample-chip" onclick="fillSearch('மலர்')">மலர்</button>
+        <button class="sample-chip" onclick="fillSearch('புத்தகம்')">புத்தகம்</button>
+        <button class="sample-chip" onclick="fillSearch('காதல்')">காதல்</button>
+        <button class="sample-chip en-sample hidden" onclick="fillSearch('love')">love</button>
+        <button class="sample-chip en-sample hidden" onclick="fillSearch('sky')">sky</button>
+        <button class="sample-chip en-sample hidden" onclick="fillSearch('rain')">rain</button>
+      </div>
+    </section>
+
+    <!-- Results Area -->
+    <section class="results-section" id="results-section" aria-live="polite">
+
+      <!-- Empty State -->
+      <div class="empty-state" id="empty-state">
+        <div class="empty-glyph">அ</div>
+        <p class="empty-title">Enter a Tamil word to explore its roots</p>
+        <p class="empty-sub">Discover meanings, morphemes, and linguistic origins of Tamil vocabulary</p>
+        <div class="origin-pills">
+          <span class="pill pure">Pure Tamil</span>
+          <span class="pill sanskrit">Sanskrit-derived</span>
+          <span class="pill arabic">Arabic-derived</span>
+          <span class="pill unknown">Unknown</span>
+        </div>
+      </div>
+
+      <!-- Match type notice -->
+      <div class="match-notice hidden" id="match-notice"></div>
+
+      <!-- Cards container -->
+      <div class="cards-grid" id="cards-grid"></div>
+
+      <!-- No results -->
+      <div class="no-results hidden" id="no-results">
+        <div class="no-results-glyph">?</div>
+        <p>No results found for "<span id="no-results-query"></span>"</p>
+        <p class="no-results-sub">Try checking the spelling, or search in English mode.</p>
+      </div>
+
+      <!-- Loading spinner -->
+      <div class="loading-state hidden" id="loading-state">
+        <div class="spinner"></div>
+        <p>Analyzing…</p>
+      </div>
+
+    </section>
+
+    <!-- ── Browse All Words ── -->
+    <section class="browse-section">
+      <div class="browse-header" onclick="toggleBrowse()">
+        <h2>Browse All Words <span class="browse-count" id="browse-count"></span></h2>
+        <span class="browse-toggle" id="browse-toggle">▾ Show</span>
+      </div>
+      <div class="browse-grid hidden" id="browse-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>
+        <strong>Tamil Etymology Explorer</strong> · Rule-based morphological analysis ·
+        <span class="footer-note">22+ words in dataset</span>
+      </p>
+      <p class="footer-disclaimer">
+        Analysis is heuristic. Results may not be 100% accurate for complex or rare words.
+      </p>
+    </div>
+  </footer>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
