@@ -19,9 +19,9 @@ from pydantic import BaseModel
 # App Initialization
 # ─────────────────────────────────────────────
 app = FastAPI(
-    title="Tamil Etymology Explorer API",
+    title="Kavi Kalanjiyam API · கவி களஞ்சியம்",
     description="Search and explore Tamil word etymologies, morphemes, and meanings.",
-    version="1.0.0"
+    version="2.0.0"
 )
 
 # Allow cross-origin requests (needed when frontend runs separately)
