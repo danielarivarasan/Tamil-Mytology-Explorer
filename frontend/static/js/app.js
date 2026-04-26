@@ -1,6 +1,6 @@
 /**
  * Kavi Kalanjiyam — கவி களஞ்சியம்
- * Frontend Application Logic
+ * Frontend Application — v2.1
  */
 
 const API_BASE = "";
@@ -8,11 +8,29 @@ let currentMode = "tamil";
 let autocompleteTimer = null;
 let selectedAutoIndex = -1;
 
-// ── Init ──
+// ── Recitation State ──
+let synth = window.speechSynthesis;
+let reciteUtterance = null;
+let reciteWords = [];
+let currentWordIdx = 0;
+let isPaused = false;
+let voicesLoaded = [];
+
+// ═══════════════════════════════
+//  INIT
+// ═══════════════════════════════
 document.addEventListener("DOMContentLoaded", () => {
   loadDBCount();
   loadBrowseGrid();
   setupListeners();
+  initVoices();
+
+  document.getElementById("rate-range").addEventListener("input", e => {
+    document.getElementById("rate-val").textContent = parseFloat(e.target.value).toFixed(2) + "×";
+  });
+  document.getElementById("pitch-range").addEventListener("input", e => {
+    document.getElementById("pitch-val").textContent = parseFloat(e.target.value).toFixed(2) + "×";
+  });
 });
 
 async function loadDBCount() {
@@ -21,10 +39,189 @@ async function loadDBCount() {
     const data = await res.json();
     document.getElementById("db-count").textContent = `${data.total} words`;
     document.getElementById("browse-count").textContent = data.total;
-  } catch (e) { console.warn("Could not load DB count:", e); }
+  } catch(e) { console.warn("DB count:", e); }
 }
 
-// ── Mode ──
+// ═══════════════════════════════
+//  SPEECH SYNTHESIS — VOICES
+// ═══════════════════════════════
+function initVoices() {
+  function populate() {
+    voicesLoaded = synth.getVoices();
+    const sel = document.getElementById("voice-select");
+    sel.innerHTML = "";
+
+    // Tamil voices first, then all others
+    const tamil = voicesLoaded.filter(v =>
+      v.lang.startsWith("ta") || v.name.toLowerCase().includes("tamil") || v.name.toLowerCase().includes("lekha")
+    );
+    const others = voicesLoaded.filter(v => !tamil.includes(v));
+
+    const addOption = (v, label) => {
+      const opt = document.createElement("option");
+      opt.value = v.name;
+      opt.textContent = label || `${v.name} (${v.lang})`;
+      if (v.default) opt.selected = true;
+      sel.appendChild(opt);
+    };
+
+    if (tamil.length) {
+      const grp = document.createElement("optgroup");
+      grp.label = "Tamil Voices";
+      sel.appendChild(grp);
+      tamil.forEach(v => {
+        const opt = document.createElement("option");
+        opt.value = v.name;
+        opt.textContent = `${v.name} (${v.lang})`;
+        grp.appendChild(opt);
+      });
+      // pre-select first Tamil voice
+      sel.value = tamil[0].name;
+    }
+
+    if (others.length) {
+      const grp = document.createElement("optgroup");
+      grp.label = "Other Voices";
+      sel.appendChild(grp);
+      others.forEach(v => {
+        const opt = document.createElement("option");
+        opt.value = v.name;
+        opt.textContent = `${v.name} (${v.lang})`;
+        grp.appendChild(opt);
+      });
+    }
+
+    if (!sel.options.length) {
+      const opt = document.createElement("option");
+      opt.textContent = "Default system voice";
+      sel.appendChild(opt);
+    }
+  }
+
+  // Chrome loads voices async
+  if (synth.getVoices().length) { populate(); }
+  synth.addEventListener("voiceschanged", populate);
+}
+
+// ═══════════════════════════════
+//  POEM PANEL
+// ═══════════════════════════════
+let poemOpen = false;
+function togglePoem() {
+  poemOpen = !poemOpen;
+  document.getElementById("poem-body").classList.toggle("hidden", !poemOpen);
+  document.getElementById("poem-toggle-btn").classList.toggle("open", poemOpen);
+}
+
+// ── Recite ──
+function recitePoem() {
+  const text = document.getElementById("poem-input").value.trim();
+  if (!text) {
+    document.getElementById("poem-input").focus();
+    return;
+  }
+  stopRecite();
+
+  // Split into words for highlighting
+  reciteWords = text.split(/\s+/).filter(Boolean);
+  currentWordIdx = 0;
+  isPaused = false;
+  renderHighlight();
+
+  // Build utterance
+  reciteUtterance = new SpeechSynthesisUtterance(text);
+
+  // Apply selected voice
+  const selName = document.getElementById("voice-select").value;
+  const chosen = voicesLoaded.find(v => v.name === selName);
+  if (chosen) reciteUtterance.voice = chosen;
+
+  // Rate and pitch — slower, more reverent for poetry
+  reciteUtterance.rate  = parseFloat(document.getElementById("rate-range").value);
+  reciteUtterance.pitch = parseFloat(document.getElementById("pitch-range").value);
+  reciteUtterance.volume = 1;
+
+  // Word boundary — highlight current word
+  reciteUtterance.addEventListener("boundary", e => {
+    if (e.name !== "word") return;
+    const spokenSoFar = text.slice(0, e.charIndex + e.charLength);
+    currentWordIdx = spokenSoFar.trim().split(/\s+/).length - 1;
+    renderHighlight();
+  });
+
+  reciteUtterance.addEventListener("end", () => {
+    currentWordIdx = reciteWords.length;
+    renderHighlight();
+    setTimeout(resetReciteUI, 900);
+  });
+
+  reciteUtterance.addEventListener("error", () => resetReciteUI());
+
+  // UI
+  document.getElementById("recite-btn").disabled = true;
+  document.getElementById("pause-btn").classList.remove("hidden");
+  document.getElementById("stop-btn").classList.remove("hidden");
+  document.getElementById("poem-highlight-box").classList.remove("hidden");
+  document.body.classList.add("reciting");
+
+  synth.speak(reciteUtterance);
+}
+
+// ── Pause / Resume ──
+function togglePause() {
+  if (!synth.speaking) return;
+  const btn = document.getElementById("pause-btn");
+  if (isPaused) {
+    synth.resume();
+    isPaused = false;
+    btn.innerHTML = "<span>&#10074;&#10074;</span> Pause";
+    document.body.classList.add("reciting");
+  } else {
+    synth.pause();
+    isPaused = true;
+    btn.innerHTML = "<span>&#9654;</span> Resume";
+    document.body.classList.remove("reciting");
+  }
+}
+
+// ── Stop ──
+function stopRecite() {
+  synth.cancel();
+  reciteUtterance = null;
+  isPaused = false;
+  resetReciteUI();
+}
+
+function resetReciteUI() {
+  document.getElementById("recite-btn").disabled = false;
+  document.getElementById("pause-btn").classList.add("hidden");
+  document.getElementById("stop-btn").classList.add("hidden");
+  document.body.classList.remove("reciting");
+  document.getElementById("pause-btn").innerHTML = "<span>&#10074;&#10074;</span> Pause";
+  setTimeout(() => {
+    document.getElementById("poem-highlight-box").classList.add("hidden");
+  }, 1200);
+}
+
+// ── Word highlight renderer ──
+function renderHighlight() {
+  const box = document.getElementById("poem-highlight-text");
+  box.innerHTML = reciteWords.map((w, i) => {
+    if (i < currentWordIdx)
+      return `<span class="word-spoken">${w}</span>`;
+    if (i === currentWordIdx)
+      return `<span class="word-current">${w}</span>`;
+    return `<span class="word-pending">${w}</span>`;
+  }).join(" ");
+
+  // scroll current word into view inside the box
+  const cur = box.querySelector(".word-current");
+  if (cur) cur.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+// ═══════════════════════════════
+//  MODE TOGGLE
+// ═══════════════════════════════
 function setMode(mode) {
   currentMode = mode;
   document.querySelectorAll(".mode-btn").forEach(btn =>
@@ -46,10 +243,11 @@ function setMode(mode) {
   input.focus();
 }
 
-// ── Listeners ──
+// ═══════════════════════════════
+//  SEARCH LISTENERS
+// ═══════════════════════════════
 function setupListeners() {
   const input = document.getElementById("search-input");
-
   input.addEventListener("input", () => {
     const val = input.value.trim();
     toggleClear(val.length > 0);
@@ -60,9 +258,7 @@ function setupListeners() {
       closeAC();
     }
   });
-
   input.addEventListener("keydown", handleKeydown);
-
   document.addEventListener("click", e => {
     if (!e.target.closest(".search-wrap")) closeAC();
   });
@@ -90,12 +286,14 @@ function handleKeydown(e) {
 }
 
 function highlightAC(items) {
-  items.forEach((item, i) => {
-    item.classList.toggle("highlighted", i === selectedAutoIndex);
-  });
+  items.forEach((item, i) =>
+    item.classList.toggle("highlighted", i === selectedAutoIndex)
+  );
 }
 
-// ── Autocomplete ──
+// ═══════════════════════════════
+//  AUTOCOMPLETE
+// ═══════════════════════════════
 async function fetchAC(q) {
   try {
     const res  = await fetch(`${API_BASE}/api/autocomplete?q=${encodeURIComponent(q)}&limit=7`);
@@ -121,7 +319,9 @@ function closeAC() {
   selectedAutoIndex = -1;
 }
 
-// ── Search ──
+// ═══════════════════════════════
+//  SEARCH
+// ═══════════════════════════════
 function fillSearch(word) {
   document.getElementById("search-input").value = word;
   toggleClear(true);
@@ -149,12 +349,14 @@ async function performSearch() {
     const res  = await fetch(url);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     renderResults(await res.json());
-  } catch (err) {
+  } catch(err) {
     showError("Network error — is the backend running?");
   }
 }
 
-// ── Render ──
+// ═══════════════════════════════
+//  RENDER RESULTS
+// ═══════════════════════════════
 function renderResults(data) {
   hideAll();
   if (!data.results || !data.results.length) {
@@ -179,15 +381,10 @@ function buildCard(word, i) {
   const card = document.createElement("div");
   card.className = "word-card";
   card.style.animationDelay = `${i * 0.06}s`;
-
   const originKey = getOriginKey(word.origin);
-
   const morphHtml = word.morphemes.map((m, idx) =>
     `${idx > 0 ? '<span class="m-plus">+</span>' : ''}
-     <span class="m-chip">
-       <span class="m-chip-num">${idx + 1}</span>
-       ${m}
-     </span>`
+     <span class="m-chip"><span class="m-chip-num">${idx + 1}</span>${m}</span>`
   ).join("");
 
   card.innerHTML = `
@@ -235,7 +432,9 @@ function getOriginKey(origin) {
   return "unknown";
 }
 
-// ── Browse ──
+// ═══════════════════════════════
+//  BROWSE
+// ═══════════════════════════════
 async function loadBrowseGrid() {
   try {
     const res  = await fetch(`${API_BASE}/api/words`);
@@ -247,7 +446,7 @@ async function loadBrowseGrid() {
          <small>${w.meaning_english.split(",")[0].trim().slice(0,18)}</small>
        </button>`
     ).join("");
-  } catch (e) { console.warn("Could not load browse grid:", e); }
+  } catch(e) { console.warn("Browse grid:", e); }
 }
 
 let browseOpen = false;
@@ -259,14 +458,16 @@ function toggleBrowse() {
   btn.classList.toggle("open", browseOpen);
 }
 
-// ── UI States ──
+// ═══════════════════════════════
+//  UI STATE HELPERS
+// ═══════════════════════════════
 function hideAll() {
   ["empty-state","loading-state","no-results","match-notice"].forEach(id =>
     document.getElementById(id).classList.add("hidden")
   );
   document.getElementById("cards-grid").innerHTML = "";
 }
-function showEmpty() {
+function showEmpty()  {
   hideAll();
   document.getElementById("empty-state").classList.remove("hidden");
 }
