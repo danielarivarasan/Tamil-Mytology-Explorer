@@ -1,0 +1,837 @@
+[
+  {
+    "word": "அன்பு",
+    "meaning_tamil": "நேசம், பாசம்",
+    "meaning_english": "Love, affection",
+    "root": "அன்",
+    "morphemes": [
+      "அன்",
+      "பு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "அன்பே தமிழ் என்று சொல்வார்கள்.",
+    "example_english": "They say love is Tamil itself.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "One of the oldest recorded Tamil emotional concepts, found throughout Sangam poetry (Akananuru, Purananuru).",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "வானம்",
+    "meaning_tamil": "ஆகாயம், விண்",
+    "meaning_english": "Sky, heaven",
+    "root": "வான்",
+    "morphemes": [
+      "வான்",
+      "அம்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "வானம் நீல நிறத்தில் உள்ளது.",
+    "example_english": "The sky is blue in colour.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Common in classical Sangam verse as a symbol of boundlessness and the divine canopy over the earth.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "மலர்",
+    "meaning_tamil": "பூ, மொட்டு விரிதல்",
+    "meaning_english": "Flower, to bloom",
+    "root": "மல்",
+    "morphemes": [
+      "மல்",
+      "அர்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "தோட்டத்தில் மலர்கள் பூத்துள்ளன.",
+    "example_english": "Flowers have bloomed in the garden.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Appears across all five tinai (landscape) categories in Sangam literature, especially Mullai and Kurinji.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "கடல்",
+    "meaning_tamil": "சமுத்திரம், பெருங்கடல்",
+    "meaning_english": "Sea, ocean",
+    "root": "கட",
+    "morphemes": [
+      "கட",
+      "அல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "கடலின் ஓசை கேட்கின்றது.",
+    "example_english": "The sound of the sea can be heard.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Central to the Neytal tinai. Appears in Sangam texts like Natrinai and Akananuru as a symbol of longing.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "மழை",
+    "meaning_tamil": "பனிபொழிவு, வர்ஷம்",
+    "meaning_english": "Rain",
+    "root": "மழ",
+    "morphemes": [
+      "மழ",
+      "ஐ"
+    ],
+    "origin": "Pure Tamil",
+    "example": "மழை நன்றாக பெய்கிறது.",
+    "example_english": "It is raining well.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Key seasonal symbol in the Mullai tinai. Associated with reunion of lovers in Sangam poetry.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "பாடல்",
+    "meaning_tamil": "இசை, பாட்டு",
+    "meaning_english": "Song, poem set to music",
+    "root": "பாடு",
+    "morphemes": [
+      "பாடு",
+      "அல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "அவர் இனிய பாடல் பாடினார்.",
+    "example_english": "He/She sang a sweet song.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "The oral tradition of Tamil song predates written records. Paadam (song) is foundational to Sangam culture.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "நிலவு",
+    "meaning_tamil": "சந்திரன், மதி",
+    "meaning_english": "Moon",
+    "root": "நில",
+    "morphemes": [
+      "நில",
+      "அவு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "நிலவு இன்று மிகவும் பிரகாசமாக உள்ளது.",
+    "example_english": "The moon is very bright today.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "The moon as witness to love is a recurring image in Kurinji and Neytal poetry of the Sangam corpus.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "தாய்",
+    "meaning_tamil": "அம்மா, மாதா",
+    "meaning_english": "Mother",
+    "root": "தா",
+    "morphemes": [
+      "தா",
+      "ய்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "தாய் மடியில் தூங்கும் குழந்தை.",
+    "example_english": "A child sleeping in the mother's lap.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Among the oldest Tamil root words. Found in Tolkappiyam as a fundamental kinship term.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "சொல்",
+    "meaning_tamil": "வார்த்தை, பதம்",
+    "meaning_english": "Word, speech",
+    "root": "சொல்",
+    "morphemes": [
+      "சொல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "ஒவ்வொரு சொல்லும் அர்த்தம் உடையது.",
+    "example_english": "Every word has a meaning.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Discussed by Tolkappiyam (c. 300 BCE) as a foundational linguistic unit of Tamil grammar.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "புத்தகம்",
+    "meaning_tamil": "நூல், ஏடு",
+    "meaning_english": "Book",
+    "root": "புத்தக (Sanskrit: पुस्तक)",
+    "morphemes": [
+      "புத்தக",
+      "அம்"
+    ],
+    "origin": "Sanskrit-derived",
+    "example": "நான் தினமும் புத்தகம் படிப்பேன்.",
+    "example_english": "I read a book every day.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Sanskrit loanword that entered Tamil during the Pallava and early Chola periods of Sanskrit-Tamil literary exchange.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "வித்யா",
+    "meaning_tamil": "கல்வி, ஞானம்",
+    "meaning_english": "Education, knowledge",
+    "root": "வித்யா (Sanskrit: विद्या)",
+    "morphemes": [
+      "வித்",
+      "யா"
+    ],
+    "origin": "Sanskrit-derived",
+    "example": "வித்யா மனித வாழ்வின் ஆதாரம்.",
+    "example_english": "Education is the foundation of human life.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Sanskrit-origin term that spread widely through Bhakti literature and temple inscriptions of the Pallava era.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "சந்தோஷம்",
+    "meaning_tamil": "மகிழ்ச்சி, களிப்பு",
+    "meaning_english": "Happiness, joy",
+    "root": "சந்தோஷ (Sanskrit: सन्तोष)",
+    "morphemes": [
+      "சந்தோஷ",
+      "அம்"
+    ],
+    "origin": "Sanskrit-derived",
+    "example": "அவளுக்கு மிகுந்த சந்தோஷம் இருக்கிறது.",
+    "example_english": "She has great happiness.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Popularised through the Bhakti movement hymns of Thevaram and Divya Prabandham (7th–9th century CE).",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "காதல்",
+    "meaning_tamil": "காதல், இசைவு",
+    "meaning_english": "Romantic love",
+    "root": "காது",
+    "morphemes": [
+      "காது",
+      "அல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "காதல் வாழ்வின் அழகு.",
+    "example_english": "Love is the beauty of life.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "The concept of romantic love (akam) is central to Sangam poetry. Kaadhal appears in Ainkurunooru and Natrinai.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "நண்பன்",
+    "meaning_tamil": "தோழன், மித்திரன்",
+    "meaning_english": "Friend (male)",
+    "root": "நண்பு",
+    "morphemes": [
+      "நண்பு",
+      "அன்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "என் நண்பன் என்னோடு வந்தான்.",
+    "example_english": "My friend came with me.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Friendship and camaraderie are themes in the Puram (public) poetry of the Sangam anthologies.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "கவிதை",
+    "meaning_tamil": "பாடல், செய்யுள்",
+    "meaning_english": "Poetry, poem",
+    "root": "கவி (Sanskrit: कवि)",
+    "morphemes": [
+      "கவி",
+      "தை"
+    ],
+    "origin": "Sanskrit-derived",
+    "example": "அவர் அழகிய கவிதை எழுதுகிறார்.",
+    "example_english": "He/She writes beautiful poetry.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Though poetry existed since Sangam times, the Sanskrit-derived word 'kavithai' became common during the medieval Tamil-Sanskrit bilingual tradition.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "ஆறு",
+    "meaning_tamil": "நதி, ஆறுதல்",
+    "meaning_english": "River; also: to cool or soothe",
+    "root": "ஆ",
+    "morphemes": [
+      "ஆ",
+      "று"
+    ],
+    "origin": "Pure Tamil",
+    "example": "காவிரி ஆறு தமிழகத்தின் உயிர்நாடி.",
+    "example_english": "The Kaveri river is the lifeline of Tamil Nadu.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Rivers were sacred and foundational in early Tamil geography. The word appears in Tolkappiyam and early Sangam texts.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "மரம்",
+    "meaning_tamil": "விருட்சம், தரு",
+    "meaning_english": "Tree",
+    "root": "மர",
+    "morphemes": [
+      "மர",
+      "அம்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "அந்த மரம் நிழல் தருகிறது.",
+    "example_english": "That tree gives shade.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "One of the earliest nature words in Tamil. Trees played a central role in tinai classification in Tolkappiyam.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "கல்வி",
+    "meaning_tamil": "படிப்பு, ஞானம்",
+    "meaning_english": "Education, learning",
+    "root": "கல்",
+    "morphemes": [
+      "கல்",
+      "வி"
+    ],
+    "origin": "Pure Tamil",
+    "example": "கல்வி அறிவே சிறந்த செல்வம்.",
+    "example_english": "Educational knowledge is the greatest wealth.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Education and learning are praised throughout Sangam poetry and in Thirukkural (c. 100 BCE – 300 CE).",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "பயணம்",
+    "meaning_tamil": "பிரயாணம், சென்று வருதல்",
+    "meaning_english": "Journey, travel",
+    "root": "பயண",
+    "morphemes": [
+      "பயண",
+      "அம்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "நீண்ட பயணம் களைப்பாக இருந்தது.",
+    "example_english": "The long journey was tiring.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Travel and separation form the core of Akam poetry. Journey imagery is central to the Palai tinai.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "உலகம்",
+    "meaning_tamil": "பூமி, ஜகம்",
+    "meaning_english": "World, earth",
+    "root": "உல",
+    "morphemes": [
+      "உல",
+      "கம்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "இந்த உலகம் மிகவும் அழகானது.",
+    "example_english": "This world is very beautiful.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Purananuru opens with the concept of the world as home to all people. The word appears prominently in Sangam political poetry.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "சமூகம்",
+    "meaning_tamil": "சமாஜம், கூட்டம்",
+    "meaning_english": "Society, community",
+    "root": "சமூக (Arabic: جماعة)",
+    "morphemes": [
+      "சமூக",
+      "அம்"
+    ],
+    "origin": "Arabic-derived",
+    "example": "நல்ல சமூகம் கட்டமைப்பு அவசியம்.",
+    "example_english": "Building a good society is necessary.",
+    "era": "Modern Period",
+    "year_range": "1800 CE – present",
+    "era_desc": "Arabic-origin word that entered Tamil through trade and later standardised in modern Tamil during colonial-era social reform writings.",
+    "era_color": "#dc2626"
+  },
+  {
+    "word": "குழந்தை",
+    "meaning_tamil": "பிள்ளை, சேய்",
+    "meaning_english": "Child, baby",
+    "root": "குழ",
+    "morphemes": [
+      "குழ",
+      "அந்தை"
+    ],
+    "origin": "Pure Tamil",
+    "example": "குழந்தை மழலை பேசுகிறது.",
+    "example_english": "The child is speaking in baby talk.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Children and childhood are tenderly depicted in Sangam poetry, especially in Purananuru and Akananuru.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "இசை",
+    "meaning_tamil": "இன்னிசை, சங்கீதம்",
+    "meaning_english": "Music, melody",
+    "root": "இசை",
+    "morphemes": [
+      "இசை"
+    ],
+    "origin": "Pure Tamil",
+    "example": "இசை கேட்கும்போது மனம் அமைதி அடைகிறது.",
+    "example_english": "The mind finds peace when listening to music.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Music (isai) was one of the three pillars of Sangam civilisation alongside literature (ilakkiyam) and dance (natam).",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "நூல்",
+    "meaning_tamil": "புத்தகம், கயிறு",
+    "meaning_english": "Book; thread; to spin",
+    "root": "நூல்",
+    "morphemes": [
+      "நூல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "சங்க இலக்கிய நூல்கள் பல உள்ளன.",
+    "example_english": "There are many Sangam literary texts.",
+    "era": "Tolkappiyam Era",
+    "year_range": "500 BCE – 100 BCE",
+    "era_desc": "The word 'nool' meaning literary text is used by Tolkappiyar himself to describe his grammar. It signifies the ancient academic tradition.",
+    "era_color": "#0891b2"
+  },
+  {
+    "word": "வெற்றி",
+    "meaning_tamil": "ஜெயம், சாதனை",
+    "meaning_english": "Victory, success",
+    "root": "வெற்று",
+    "morphemes": [
+      "வெற்று",
+      "இ"
+    ],
+    "origin": "Pure Tamil",
+    "example": "கடின உழைப்பால் வெற்றி பெறலாம்.",
+    "example_english": "Victory can be achieved through hard work.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Victory in battle is a central theme of Puram poetry. Celebrated in Purananuru and the Pattupattu anthologies.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "நம்பிக்கை",
+    "meaning_tamil": "நம்பல், நம்பிக்கை உணர்வு",
+    "meaning_english": "Trust, faith, belief",
+    "root": "நம்பு",
+    "morphemes": [
+      "நம்பு",
+      "இக்கை"
+    ],
+    "origin": "Pure Tamil",
+    "example": "நம்பிக்கை மனிதனை முன்னேற வைக்கும்.",
+    "example_english": "Faith propels a person forward.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Developed its modern emotional sense through Bhakti devotional literature, especially the Nayanmars and Alwars.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "அழகு",
+    "meaning_tamil": "சோபனம், அழகிய தன்மை",
+    "meaning_english": "Beauty, elegance",
+    "root": "அழகு",
+    "morphemes": [
+      "அழகு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "இயற்கையின் அழகு வார்த்தைகளில் சொல்ல முடியாது.",
+    "example_english": "The beauty of nature cannot be described in words.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Beauty (azagu) is a profound Sangam concept — not merely aesthetic but moral and spiritual, discussed in Thirukkural.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "ஒளி",
+    "meaning_tamil": "வெளிச்சம், ஜோதி",
+    "meaning_english": "Light, radiance",
+    "root": "ஒள",
+    "morphemes": [
+      "ஒள",
+      "இ"
+    ],
+    "origin": "Pure Tamil",
+    "example": "சூரியனின் ஒளி உயிர்களுக்கு உதவுகிறது.",
+    "example_english": "The light of the sun helps all living beings.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Light as metaphor for knowledge and the divine appears throughout Sangam texts and early Shaiva Siddhanta writings.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "குரல்",
+    "meaning_tamil": "ஒலி, சப்தம்",
+    "meaning_english": "Voice, sound",
+    "root": "குர",
+    "morphemes": [
+      "குர",
+      "அல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "அவரின் குரல் மிகவும் இனிமையாக இருந்தது.",
+    "example_english": "His voice was very melodious.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "The human voice as instrument of poetry and music is celebrated in the Sangam anthologies Kalithokai and Akananuru.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "செல்வம்",
+    "meaning_tamil": "ஐச்வர்யம், பொருள்",
+    "meaning_english": "Wealth, prosperity",
+    "root": "செல்",
+    "morphemes": [
+      "செல்",
+      "வம்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "கல்வியே சிறந்த செல்வம்.",
+    "example_english": "Education is the greatest wealth.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Wealth and its proper use is a key topic of Thirukkural. The tension between material and spiritual wealth runs through Sangam literature.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "மொழி",
+    "meaning_tamil": "பாஷை, சொற்கள்",
+    "meaning_english": "Language, tongue",
+    "root": "மொழி",
+    "morphemes": [
+      "மொழி"
+    ],
+    "origin": "Pure Tamil",
+    "example": "தமிழ் மொழி மிக பழமையான மொழி.",
+    "example_english": "Tamil is one of the oldest languages.",
+    "era": "Tolkappiyam Era",
+    "year_range": "500 BCE – 100 BCE",
+    "era_desc": "The word 'mozhi' is fundamental to Tamil linguistic identity. Tolkappiyam analyses mozhi as the basis of all human communication.",
+    "era_color": "#0891b2"
+  },
+  {
+    "word": "உண்மை",
+    "meaning_tamil": "சத்தியம், நேர்மை",
+    "meaning_english": "Truth, reality",
+    "root": "உண்",
+    "morphemes": [
+      "உண்",
+      "மை"
+    ],
+    "origin": "Pure Tamil",
+    "example": "உண்மையே உலகை வென்னும்.",
+    "example_english": "Truth alone conquers the world.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Truth (unmai) is the highest value in Thirukkural's first chapter on Aram (virtue). It recurs across Sangam ethical poetry.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "காடு",
+    "meaning_tamil": "வனம், அரண்யம்",
+    "meaning_english": "Forest, jungle",
+    "root": "காடு",
+    "morphemes": [
+      "காடு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "காட்டில் பலவிதமான விலங்குகள் வாழ்கின்றன.",
+    "example_english": "Many kinds of animals live in the forest.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "The forest (Palai and Mullai tinai) is one of the five ancient Tamil landscapes. A foundational ecological and poetic concept.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "மண்",
+    "meaning_tamil": "பூமி, மண்ணின் தன்மை",
+    "meaning_english": "Earth, soil, clay",
+    "root": "மண்",
+    "morphemes": [
+      "மண்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "மண்ணில் விதை விதைத்தால் மரம் முளைக்கும்.",
+    "example_english": "If you sow a seed in the soil, a tree will sprout.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Earth and soil are among the oldest Tamil root concepts. The Tamil land (Mann) is a deeply emotional and political symbol.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "தீ",
+    "meaning_tamil": "நெருப்பு, அக்கினி",
+    "meaning_english": "Fire",
+    "root": "தீ",
+    "morphemes": [
+      "தீ"
+    ],
+    "origin": "Pure Tamil",
+    "example": "தீயை கட்டுப்படுத்தாவிட்டால் அபாயம்.",
+    "example_english": "Fire uncontrolled is dangerous.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Fire rituals and the sacred fire appear in early Sangam and Vedic-influenced Tamil texts. One of the five classical elements.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "நீர்",
+    "meaning_tamil": "தண்ணீர், ஜலம்",
+    "meaning_english": "Water",
+    "root": "நீர்",
+    "morphemes": [
+      "நீர்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "நீர் இல்லாமல் உயிர் இல்லை.",
+    "example_english": "There is no life without water.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Water (neer) is one of the five classical elements. The Neytal landscape is defined by the sea. Appears in Tolkappiyam.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "காற்று",
+    "meaning_tamil": "வாயு, வளி",
+    "meaning_english": "Wind, air, breeze",
+    "root": "காற்று",
+    "morphemes": [
+      "காற்று"
+    ],
+    "origin": "Pure Tamil",
+    "example": "குளிர்ந்த காற்று வீசுகிறது.",
+    "example_english": "A cool breeze is blowing.",
+    "era": "Proto-Tamil",
+    "year_range": "1000 BCE – 300 BCE",
+    "era_desc": "Wind (kaatru) is one of the five classical elements. The Marutham tinai is associated with cool river-bank breezes.",
+    "era_color": "#7c3aed"
+  },
+  {
+    "word": "பூமி",
+    "meaning_tamil": "நிலம், பிருத்வி",
+    "meaning_english": "Earth, land, ground",
+    "root": "பூமி (Sanskrit: भूमि)",
+    "morphemes": [
+      "பூமி"
+    ],
+    "origin": "Sanskrit-derived",
+    "example": "பூமி நமது வாழிடம்.",
+    "example_english": "Earth is our home.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Sanskrit-origin word for earth that entered Tamil through Pallava-era inscriptions and Shaiva temple literature.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "ஆசை",
+    "meaning_tamil": "விருப்பம், ஏக்கம்",
+    "meaning_english": "Desire, longing, wish",
+    "root": "ஆசை",
+    "morphemes": [
+      "ஆசை"
+    ],
+    "origin": "Pure Tamil",
+    "example": "அவளுக்கு படிக்க வேண்டும் என்ற ஆசை உண்டு.",
+    "example_english": "She has a desire to study.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Desire and longing are the emotional core of Akam (love) poetry. Aasai appears frequently in Natrinai and Ainkurunooru.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "கனவு",
+    "meaning_tamil": "கனா, இரவு காட்சி",
+    "meaning_english": "Dream",
+    "root": "கன",
+    "morphemes": [
+      "கன",
+      "அவு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "இனிய கனவு கண்டேன்.",
+    "example_english": "I had a sweet dream.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Dreams are poetic devices in Sangam Akam poetry, where the beloved appears in the sleeping lover's vision.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "மனம்",
+    "meaning_tamil": "உள்ளம், சிந்தனை",
+    "meaning_english": "Mind, heart, inner self",
+    "root": "மன",
+    "morphemes": [
+      "மன",
+      "அம்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "மனம் தெளிவாக இருந்தால் எல்லாம் சரி.",
+    "example_english": "If the mind is clear, everything is fine.",
+    "era": "Tolkappiyam Era",
+    "year_range": "500 BCE – 100 BCE",
+    "era_desc": "The mind (manam) is theorised in Tolkappiyam's Porulathikaram as the seat of all emotional experience in Akam poetry.",
+    "era_color": "#0891b2"
+  },
+  {
+    "word": "வீரம்",
+    "meaning_tamil": "தைரியம், சாகசம்",
+    "meaning_english": "Bravery, heroism, valour",
+    "root": "வீர (Sanskrit: वीर)",
+    "morphemes": [
+      "வீர",
+      "அம்"
+    ],
+    "origin": "Sanskrit-derived",
+    "example": "வீரம் மனிதனுக்கு அழகு.",
+    "example_english": "Bravery is an adornment for a person.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Heroism (veeram) is celebrated in Puram poetry. The seven vekai (heroic categories) are detailed in Purananuru and Tolkappiyam.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "துயர்",
+    "meaning_tamil": "கஷ்டம், வலி",
+    "meaning_english": "Sorrow, grief, pain",
+    "root": "துயர்",
+    "morphemes": [
+      "துயர்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "அவரின் துயரை யாரும் புரிந்துகொள்ளவில்லை.",
+    "example_english": "No one understood his grief.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Grief and suffering are the emotional core of Sangam separation poetry, especially in the Palai tinai of Akananuru.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "நெஞ்சு",
+    "meaning_tamil": "மார்பு, இதயம்",
+    "meaning_english": "Chest; the seat of emotions",
+    "root": "நெஞ்",
+    "morphemes": [
+      "நெஞ்",
+      "சு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "நெஞ்சில் தைத்த வார்த்தை மறக்க முடியாது.",
+    "example_english": "Words that pierce the heart cannot be forgotten.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "The chest as the seat of the heart and emotion is a recurring motif in Sangam Akam poetry and Thirukkural.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "கதை",
+    "meaning_tamil": "சரிதம், கதைப்போக்கு",
+    "meaning_english": "Story, tale, narrative",
+    "root": "கதை",
+    "morphemes": [
+      "கதை"
+    ],
+    "origin": "Pure Tamil",
+    "example": "தாத்தா கதை சொல்கிறார்.",
+    "example_english": "Grandfather is telling a story.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "The oral storytelling tradition evolved into written narrative during the medieval period, seen in Kambaramayanam and Periyapuranam.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "சிரிப்பு",
+    "meaning_tamil": "சிரிக்கும் தன்மை, ஹாஸ்யம்",
+    "meaning_english": "Laughter, smile",
+    "root": "சிரி",
+    "morphemes": [
+      "சிரி",
+      "ப்பு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "சிரிப்பு உடலுக்கு நல்லது.",
+    "example_english": "Laughter is good for the body.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Humour and laughter (hasya) emerged as a recognised poetic rasa in medieval Tamil literature, especially in Prabandham genres.",
+    "era_color": "#16a34a"
+  },
+  {
+    "word": "வாழ்வு",
+    "meaning_tamil": "ஜீவிதம், உயிர்வாழல்",
+    "meaning_english": "Life, living, existence",
+    "root": "வாழ்",
+    "morphemes": [
+      "வாழ்",
+      "வு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "வாழ்வே ஒரு கவிதை.",
+    "example_english": "Life itself is a poem.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Life and its meaning are the subject of Thirukkural's entire first section (Aram). The word appears from the earliest Tamil texts.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "பசி",
+    "meaning_tamil": "பட்டினி, வயிற்று ஏக்கம்",
+    "meaning_english": "Hunger, starvation",
+    "root": "பசி",
+    "morphemes": [
+      "பசி"
+    ],
+    "origin": "Pure Tamil",
+    "example": "பசிக்கு அமுதும் கசக்கும்.",
+    "example_english": "Even nectar tastes bitter to the hungry.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Hunger and poverty are unflinchingly depicted in Sangam Puram poetry, where the poet-patron relationship addresses material need.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "தொழில்",
+    "meaning_tamil": "வேலை, தொழிற்துறை",
+    "meaning_english": "Occupation, profession, trade",
+    "root": "தொழு",
+    "morphemes": [
+      "தொழு",
+      "இல்"
+    ],
+    "origin": "Pure Tamil",
+    "example": "கைத்தொழில் கற்றுக்கொள்வது நல்லது.",
+    "example_english": "Learning a handicraft is good.",
+    "era": "Sangam Age",
+    "year_range": "300 BCE – 300 CE",
+    "era_desc": "Occupations and trade are documented in Sangam poetry. The five tinai landscapes each had associated occupations and livelihoods.",
+    "era_color": "#d97706"
+  },
+  {
+    "word": "வரலாறு",
+    "meaning_tamil": "சரித்திரம், இதிகாசம்",
+    "meaning_english": "History, chronicle",
+    "root": "வர",
+    "morphemes": [
+      "வர",
+      "லாறு"
+    ],
+    "origin": "Pure Tamil",
+    "example": "தமிழ் வரலாறு பழமையானது.",
+    "example_english": "Tamil history is ancient.",
+    "era": "Medieval Period",
+    "year_range": "600 CE – 1200 CE",
+    "era_desc": "Historical writing (varalaru) developed formally in the Chola period with texts like Kulottunga Cholan Pillai Thamizh and copper-plate inscriptions.",
+    "era_color": "#16a34a"
+  }
+]
